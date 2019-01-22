@@ -1,0 +1,51 @@
+Load velocyto
+    ml velocyto
+
+https://github.com/velocyto-team/velocyto.py/issues/130
+CB Z Cell identifier
+UB appears to be UMI tag
+
+
+# Try downloading an ENCODE RNAseq BAM file:
+GM12878, RNASeq (GINGERAS), Total Long, Whole-cell
+http://genome.crg.es/encode_RNA_dashboard/hg19/
+
+Bio rep 1
+wget --no-check-certificate http://hgdownload-test.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/releaseLatest/wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep1.bam
+Bio rep 2
+wget --no-check-certificate http://hgdownload-test.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/releaseLatest/wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep2.bam
+
+# Add CB, UB tags
+python3 add_cb_ub_tags.py wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep1.bam
+python3 add_cb_ub_tags.py wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep2.bam
+
+# Run velocyto
+ velocyto run -U wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep1_withtags.bam ~/dat/ensembl/gtf/Homo_sapiens.GRCh37.87.chr.gtf.gz
+
+
+samtools sort -l 7 -m 512M -t CB -O BAM -@ 8 -o /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep1_withtags_sorted.bam /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep1_withtags.bam
+
+ samtools view -bh wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep2_withtags.sam  | samtools sort -l 7 -m 512M -t CB -O BAM -@ 8 -o /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep2_withtags_sorted.bam
+
+
+mv wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep1_withtags_sorted.bam Rep1.bam
+mv cellsorted_wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep1_withtags_sorted.bam cellsorted_Rep1.bam
+mv wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep2_withtags_sorted.bam Rep2.bam
+mv cellsorted_wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep2_withtags_sorted.bam cellsorted_Rep2.bam
+
+
+K562
+wget --no-check-certificate http://hgdownload-test.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/releaseLatest/wgEncodeCshlLongRnaSeqK562CellTotalAlnRep1.bam
+wget --no-check-certificate http://hgdownload-test.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/releaseLatest/wgEncodeCshlLongRnaSeqK562CellTotalAlnRep2.bam
+
+mv wgEncodeCshlLongRnaSeqK562CellTotalAlnRep1.bam K562_Rep1.bam
+mv wgEncodeCshlLongRnaSeqK562CellTotalAlnRep2.bam K562_Rep2.bam
+
+python3 add_cb_ub_tags.py K562_Rep1.bam
+python3 add_cb_ub_tags.py K562_Rep2.bam
+
+# I might have overwritten the K562 Rep2 while combining the loom files :(
+python3 combine_loom.py velocyto/Rep1_6T8PI.loom velocyto/Rep2_E9TS0.loom velocyto/K562_Rep1_withtags_TXR6K.loom velocyto/K562_Rep2_withtags_LCBND.loom combined_4samples_v2.loom
+cp velocyto/K562_Rep2_withtags_LCBND.loom velocyto/combined_4samples.loom
+
+ python3 combine_loom.py velocyto/Rep1_6T8PI.loom velocyto/Rep2_E9TS0.loom velocyto/K562_Rep1_withtags_TXR6K.loom velocyto/K562_Rep2_withtags_OWVYP.loom combined_4samples_v2.loom

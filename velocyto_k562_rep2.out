@@ -1,0 +1,544 @@
+2019-01-20 22:15:07,467 - INFO - No SAMPLEID specified, the sample will be called K562_Rep2_withtags_LCBND (last 5 digits are a random-id to avoid overwriting some other file by mistake)
+2019-01-20 22:15:07,486 - INFO - No OUTPUTFOLDER specified, find output files inside /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/velocyto
+2019-01-20 22:15:07,490 - DEBUG - Using logic: Default
+2019-01-20 22:15:07,508 - DEBUG - Cell barcodes will be determined while reading the .bam file
+2019-01-20 22:15:07,527 - DEBUG - Peeking into /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/K562_Rep2_withtags.bam
+2019-01-20 22:15:07,722 - INFO - Starting the sorting process of /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/K562_Rep2_withtags.bam the output will be at: /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/cellsorted_K562_Rep2_withtags.bam
+2019-01-20 22:15:07,729 - INFO - Command being run is: samtools sort -l 7 -m 2048M -t CB -O BAM -@ 8 -o /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/cellsorted_K562_Rep2_withtags.bam /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/K562_Rep2_withtags.bam
+2019-01-20 22:15:07,737 - INFO - While the bam sorting happens do other things...
+2019-01-20 22:15:07,757 - INFO - Load the annotation from /home/aramu/dat/ensembl/gtf/Homo_sapiens.GRCh37.87.withchr.gtf
+2019-01-20 22:15:44,242 - DEBUG - Parsing Chromosome 1 strand - [line 0]
+2019-01-20 22:15:47,604 - DEBUG - Done with 1- [line 115464]
+2019-01-20 22:15:47,622 - DEBUG - Assigning indexes to genes
+2019-01-20 22:15:47,645 - DEBUG - Seen 2651 genes until now
+2019-01-20 22:15:47,661 - DEBUG - Parsing Chromosome 1 strand + [line 115465]
+2019-01-20 22:15:51,155 - DEBUG - Done with 1+ [line 239634]
+2019-01-20 22:15:51,162 - DEBUG - Assigning indexes to genes
+2019-01-20 22:15:51,301 - DEBUG - Seen 5363 genes until now
+2019-01-20 22:15:51,320 - DEBUG - Parsing Chromosome 10 strand - [line 239635]
+2019-01-20 22:15:53,305 - DEBUG - Done with 10- [line 287385]
+2019-01-20 22:15:53,331 - DEBUG - Assigning indexes to genes
+2019-01-20 22:15:53,411 - DEBUG - Seen 6472 genes until now
+2019-01-20 22:15:53,422 - DEBUG - Parsing Chromosome 10 strand + [line 287386]
+2019-01-20 22:15:55,544 - DEBUG - Done with 10+ [line 332591]
+2019-01-20 22:15:55,572 - DEBUG - Assigning indexes to genes
+2019-01-20 22:15:55,594 - DEBUG - Seen 7623 genes until now
+2019-01-20 22:15:55,607 - DEBUG - Parsing Chromosome 11 strand - [line 332592]
+2019-01-20 22:15:59,559 - DEBUG - Done with 11- [line 410431]
+2019-01-20 22:15:59,617 - DEBUG - Assigning indexes to genes
+2019-01-20 22:15:59,665 - DEBUG - Seen 9228 genes until now
+2019-01-20 22:15:59,706 - DEBUG - Parsing Chromosome 11 strand + [line 410432]
+2019-01-20 22:16:02,164 - DEBUG - Done with 11+ [line 491967]
+2019-01-20 22:16:02,175 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:02,263 - DEBUG - Seen 10831 genes until now
+2019-01-20 22:16:02,303 - DEBUG - Parsing Chromosome 12 strand - [line 491968]
+2019-01-20 22:16:06,032 - DEBUG - Done with 12- [line 571262]
+2019-01-20 22:16:06,096 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:06,123 - DEBUG - Seen 12246 genes until now
+2019-01-20 22:16:06,194 - DEBUG - Parsing Chromosome 12 strand + [line 571263]
+2019-01-20 22:16:07,886 - DEBUG - Done with 12+ [line 650410]
+2019-01-20 22:16:07,964 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:08,011 - DEBUG - Seen 13649 genes until now
+2019-01-20 22:16:08,035 - DEBUG - Parsing Chromosome 13 strand - [line 650411]
+2019-01-20 22:16:08,707 - DEBUG - Done with 13- [line 669043]
+2019-01-20 22:16:08,741 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:08,750 - DEBUG - Seen 14280 genes until now
+2019-01-20 22:16:08,769 - DEBUG - Parsing Chromosome 13 strand + [line 669044]
+2019-01-20 22:16:09,070 - DEBUG - Done with 13+ [line 688041]
+2019-01-20 22:16:09,080 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:09,170 - DEBUG - Seen 14866 genes until now
+2019-01-20 22:16:09,191 - DEBUG - Parsing Chromosome 14 strand - [line 688042]
+2019-01-20 22:16:10,947 - DEBUG - Done with 14- [line 733053]
+2019-01-20 22:16:10,979 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:11,047 - DEBUG - Seen 15972 genes until now
+2019-01-20 22:16:11,105 - DEBUG - Parsing Chromosome 14 strand + [line 733054]
+2019-01-20 22:16:12,238 - DEBUG - Done with 14+ [line 783042]
+2019-01-20 22:16:12,254 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:12,272 - DEBUG - Seen 17110 genes until now
+2019-01-20 22:16:12,354 - DEBUG - Parsing Chromosome 15 strand - [line 783043]
+2019-01-20 22:16:13,893 - DEBUG - Done with 15- [line 832989]
+2019-01-20 22:16:13,935 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:13,963 - DEBUG - Seen 18134 genes until now
+2019-01-20 22:16:13,972 - DEBUG - Parsing Chromosome 15 strand + [line 832990]
+2019-01-20 22:16:15,453 - DEBUG - Done with 15+ [line 880053]
+2019-01-20 22:16:15,487 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:15,516 - DEBUG - Seen 19190 genes until now
+2019-01-20 22:16:15,553 - DEBUG - Parsing Chromosome 16 strand - [line 880054]
+2019-01-20 22:16:17,734 - DEBUG - Done with 16- [line 936613]
+2019-01-20 22:16:17,804 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:17,852 - DEBUG - Seen 20351 genes until now
+2019-01-20 22:16:17,867 - DEBUG - Parsing Chromosome 16 strand + [line 936614]
+2019-01-20 22:16:19,497 - DEBUG - Done with 16+ [line 1005725]
+2019-01-20 22:16:19,520 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:19,547 - DEBUG - Seen 21533 genes until now
+2019-01-20 22:16:19,562 - DEBUG - Parsing Chromosome 17 strand - [line 1005726]
+2019-01-20 22:16:22,258 - DEBUG - Done with 17- [line 1093709]
+2019-01-20 22:16:22,289 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:22,338 - DEBUG - Seen 23023 genes until now
+2019-01-20 22:16:22,347 - DEBUG - Parsing Chromosome 17 strand + [line 1093710]
+2019-01-20 22:16:24,444 - DEBUG - Done with 17+ [line 1174422]
+2019-01-20 22:16:24,533 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:24,579 - DEBUG - Seen 24436 genes until now
+2019-01-20 22:16:24,592 - DEBUG - Parsing Chromosome 18 strand - [line 1174423]
+2019-01-20 22:16:25,098 - DEBUG - Done with 18- [line 1197400]
+2019-01-20 22:16:25,118 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:25,134 - DEBUG - Seen 24996 genes until now
+2019-01-20 22:16:25,156 - DEBUG - Parsing Chromosome 18 strand + [line 1197401]
+2019-01-20 22:16:26,854 - DEBUG - Done with 18+ [line 1219513]
+2019-01-20 22:16:26,898 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:26,912 - DEBUG - Seen 25563 genes until now
+2019-01-20 22:16:26,932 - DEBUG - Parsing Chromosome 19 strand - [line 1219514]
+2019-01-20 22:16:28,671 - DEBUG - Done with 19- [line 1301072]
+2019-01-20 22:16:28,739 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:28,785 - DEBUG - Seen 26974 genes until now
+2019-01-20 22:16:28,810 - DEBUG - Parsing Chromosome 19 strand + [line 1301073]
+2019-01-20 22:16:31,847 - DEBUG - Done with 19+ [line 1385077]
+2019-01-20 22:16:31,906 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:31,988 - DEBUG - Seen 28473 genes until now
+2019-01-20 22:16:32,024 - DEBUG - Parsing Chromosome 2 strand - [line 1385078]
+2019-01-20 22:16:36,353 - DEBUG - Done with 2- [line 1480498]
+2019-01-20 22:16:36,364 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:36,509 - DEBUG - Seen 30510 genes until now
+2019-01-20 22:16:36,524 - DEBUG - Parsing Chromosome 2 strand + [line 1480499]
+2019-01-20 22:16:47,642 - DEBUG - Done with 2+ [line 1576779]
+2019-01-20 22:16:47,664 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:47,803 - DEBUG - Seen 32520 genes until now
+2019-01-20 22:16:47,836 - DEBUG - Parsing Chromosome 20 strand - [line 1576780]
+2019-01-20 22:16:49,775 - DEBUG - Done with 20- [line 1603219]
+2019-01-20 22:16:49,804 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:49,842 - DEBUG - Seen 33186 genes until now
+2019-01-20 22:16:49,864 - DEBUG - Parsing Chromosome 20 strand + [line 1603220]
+2019-01-20 22:16:52,039 - DEBUG - Done with 20+ [line 1632542]
+2019-01-20 22:16:52,068 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:52,095 - DEBUG - Seen 33837 genes until now
+2019-01-20 22:16:52,125 - DEBUG - Parsing Chromosome 21 strand - [line 1632543]
+2019-01-20 22:16:53,149 - DEBUG - Done with 21- [line 1646200]
+2019-01-20 22:16:53,164 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:53,186 - DEBUG - Seen 34228 genes until now
+2019-01-20 22:16:53,200 - DEBUG - Parsing Chromosome 21 strand + [line 1646201]
+2019-01-20 22:16:54,313 - DEBUG - Done with 21+ [line 1660577]
+2019-01-20 22:16:54,336 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:54,368 - DEBUG - Seen 34573 genes until now
+2019-01-20 22:16:54,397 - DEBUG - Parsing Chromosome 22 strand - [line 1660578]
+2019-01-20 22:16:56,503 - DEBUG - Done with 22- [line 1689197]
+2019-01-20 22:16:56,532 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:56,574 - DEBUG - Seen 35157 genes until now
+2019-01-20 22:16:56,592 - DEBUG - Parsing Chromosome 22 strand + [line 1689198]
+2019-01-20 22:16:58,842 - DEBUG - Done with 22+ [line 1719282]
+2019-01-20 22:16:58,872 - DEBUG - Assigning indexes to genes
+2019-01-20 22:16:58,910 - DEBUG - Seen 35836 genes until now
+2019-01-20 22:16:58,932 - DEBUG - Parsing Chromosome 3 strand - [line 1719283]
+2019-01-20 22:17:05,000 - DEBUG - Done with 3- [line 1800860]
+2019-01-20 22:17:05,016 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:05,115 - DEBUG - Seen 37394 genes until now
+2019-01-20 22:17:05,136 - DEBUG - Parsing Chromosome 3 strand + [line 1800861]
+2019-01-20 22:17:11,032 - DEBUG - Done with 3+ [line 1880397]
+2019-01-20 22:17:11,077 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:11,183 - DEBUG - Seen 38937 genes until now
+2019-01-20 22:17:11,204 - DEBUG - Parsing Chromosome 4 strand - [line 1880398]
+2019-01-20 22:17:14,929 - DEBUG - Done with 4- [line 1931029]
+2019-01-20 22:17:14,944 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:15,011 - DEBUG - Seen 40221 genes until now
+2019-01-20 22:17:15,048 - DEBUG - Parsing Chromosome 4 strand + [line 1931030]
+2019-01-20 22:17:21,599 - DEBUG - Done with 4+ [line 1981602]
+2019-01-20 22:17:21,607 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:21,627 - DEBUG - Seen 41500 genes until now
+2019-01-20 22:17:21,638 - DEBUG - Parsing Chromosome 5 strand - [line 1981603]
+2019-01-20 22:17:23,928 - DEBUG - Done with 5- [line 2035920]
+2019-01-20 22:17:23,932 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:23,953 - DEBUG - Seen 42923 genes until now
+2019-01-20 22:17:23,956 - DEBUG - Parsing Chromosome 5 strand + [line 2035921]
+2019-01-20 22:17:26,203 - DEBUG - Done with 5+ [line 2097063]
+2019-01-20 22:17:26,209 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:26,244 - DEBUG - Seen 44359 genes until now
+2019-01-20 22:17:26,337 - DEBUG - Parsing Chromosome 6 strand - [line 2097064]
+2019-01-20 22:17:29,489 - DEBUG - Done with 6- [line 2159597]
+2019-01-20 22:17:29,622 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:29,654 - DEBUG - Seen 45818 genes until now
+2019-01-20 22:17:29,673 - DEBUG - Parsing Chromosome 6 strand + [line 2159598]
+2019-01-20 22:17:32,384 - DEBUG - Done with 6+ [line 2215482]
+2019-01-20 22:17:32,388 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:32,408 - DEBUG - Seen 47264 genes until now
+2019-01-20 22:17:32,421 - DEBUG - Parsing Chromosome 7 strand - [line 2215483]
+2019-01-20 22:17:35,315 - DEBUG - Done with 7- [line 2273859]
+2019-01-20 22:17:35,446 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:35,512 - DEBUG - Seen 48659 genes until now
+2019-01-20 22:17:35,535 - DEBUG - Parsing Chromosome 7 strand + [line 2273860]
+2019-01-20 22:17:38,310 - DEBUG - Done with 7+ [line 2338808]
+2019-01-20 22:17:38,336 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:38,374 - DEBUG - Seen 50140 genes until now
+2019-01-20 22:17:38,430 - DEBUG - Parsing Chromosome 8 strand - [line 2338809]
+2019-01-20 22:17:40,508 - DEBUG - Done with 8- [line 2388274]
+2019-01-20 22:17:40,529 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:40,545 - DEBUG - Seen 51366 genes until now
+2019-01-20 22:17:40,553 - DEBUG - Parsing Chromosome 8 strand + [line 2388275]
+2019-01-20 22:17:42,839 - DEBUG - Done with 8+ [line 2434182]
+2019-01-20 22:17:42,902 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:42,975 - DEBUG - Seen 52526 genes until now
+2019-01-20 22:17:43,015 - DEBUG - Parsing Chromosome 9 strand - [line 2434183]
+2019-01-20 22:17:44,835 - DEBUG - Done with 9- [line 2479495]
+2019-01-20 22:17:44,873 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:44,904 - DEBUG - Seen 53688 genes until now
+2019-01-20 22:17:44,951 - DEBUG - Parsing Chromosome 9 strand + [line 2479496]
+2019-01-20 22:17:49,898 - DEBUG - Done with 9+ [line 2525514]
+2019-01-20 22:17:49,918 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:49,935 - DEBUG - Seen 54849 genes until now
+2019-01-20 22:17:50,048 - DEBUG - Parsing Chromosome MT strand - [line 2525515]
+2019-01-20 22:17:50,070 - DEBUG - Done with MT- [line 2525544]
+2019-01-20 22:17:50,085 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:50,101 - DEBUG - Seen 54858 genes until now
+2019-01-20 22:17:50,107 - DEBUG - Parsing Chromosome MT strand + [line 2525545]
+2019-01-20 22:17:50,116 - DEBUG - Done with MT+ [line 2525658]
+2019-01-20 22:17:50,128 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:50,140 - DEBUG - Seen 54886 genes until now
+2019-01-20 22:17:50,148 - DEBUG - Parsing Chromosome X strand - [line 2525659]
+2019-01-20 22:17:51,412 - DEBUG - Done with X- [line 2565621]
+2019-01-20 22:17:51,414 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:51,520 - DEBUG - Seen 56063 genes until now
+2019-01-20 22:17:51,588 - DEBUG - Parsing Chromosome X strand + [line 2565622]
+2019-01-20 22:17:53,246 - DEBUG - Done with X+ [line 2605592]
+2019-01-20 22:17:53,287 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:53,325 - DEBUG - Seen 57278 genes until now
+2019-01-20 22:17:53,343 - DEBUG - Parsing Chromosome Y strand - [line 2605593]
+2019-01-20 22:17:53,492 - DEBUG - Done with Y- [line 2608780]
+2019-01-20 22:17:53,575 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:53,597 - DEBUG - Seen 57520 genes until now
+2019-01-20 22:17:53,615 - DEBUG - Parsing Chromosome Y strand + [line 2608781]
+2019-01-20 22:17:53,831 - DEBUG - Assigning indexes to genes
+2019-01-20 22:17:53,874 - DEBUG - Done with Y+ [line 2612759]
+2019-01-20 22:17:53,891 - DEBUG - Fixing corner cases of transcript models containg intron longer than 1000Kbp
+2019-01-20 22:18:05,238 - DEBUG - Generated 2194420 features corresponding to 196354 transcript models from /home/aramu/dat/ensembl/gtf/Homo_sapiens.GRCh37.87.withchr.gtf
+2019-01-20 22:18:05,544 - INFO - Scan /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/K562_Rep2_withtags.bam to validate intron intervals
+2019-01-20 22:18:40,630 - DEBUG - Reading /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/K562_Rep2_withtags.bam
+2019-01-20 22:18:41,106 - DEBUG - Read first 0 million reads
+2019-01-20 22:18:41,115 - DEBUG - Marking up chromosome 1
+2019-01-20 22:35:29,513 - DEBUG - Marking up chromosome 2
+2019-01-20 22:35:50,586 - DEBUG - Read first 10 million reads
+2019-01-20 22:38:10,030 - DEBUG - Marking up chromosome 3
+2019-01-20 22:39:42,461 - DEBUG - Marking up chromosome 4
+2019-01-20 22:40:30,489 - DEBUG - Marking up chromosome 5
+2019-01-20 22:41:50,857 - DEBUG - Marking up chromosome 6
+2019-01-20 22:44:08,504 - DEBUG - Marking up chromosome 7
+2019-01-20 22:45:23,389 - DEBUG - Marking up chromosome 8
+2019-01-20 22:45:32,914 - DEBUG - Read first 20 million reads
+2019-01-20 22:49:43,535 - DEBUG - Marking up chromosome 9
+2019-01-20 22:50:03,074 - WARNING - Trashing read, too long span
+BILLIEHOLIDAY:7:114:276:1999/2/2	129	chr9	38552925	255	5S38M3006937N15M12S	*	0	0	ACTGTTATCGCCTTGGAGCCCCCACACAGGAGGTTACCATCCTCAGACCCCGGGTTCATGGACTCACCAA	BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBRQQQRSTTUZUYVXXTZ^^^^^[``aVaaa_	CB:Z:K562_Rep2	UB:Z:dummy_umi
+2019-01-20 22:51:26,132 - DEBUG - Marking up chromosome 10
+2019-01-20 22:52:02,884 - DEBUG - Marking up chromosome 11
+2019-01-20 22:54:41,865 - DEBUG - Read first 30 million reads
+2019-01-20 22:54:59,391 - DEBUG - Marking up chromosome 12
+2019-01-20 22:57:32,883 - DEBUG - Marking up chromosome 13
+2019-01-20 22:57:44,215 - DEBUG - Marking up chromosome 14
+2019-01-20 22:59:03,400 - DEBUG - Marking up chromosome 15
+2019-01-20 22:59:39,198 - DEBUG - Marking up chromosome 16
+2019-01-20 23:02:13,566 - DEBUG - Marking up chromosome 17
+2019-01-20 23:04:01,235 - DEBUG - Read first 40 million reads
+2019-01-20 23:05:02,550 - DEBUG - Marking up chromosome 18
+2019-01-20 23:05:15,061 - DEBUG - Marking up chromosome 19
+2019-01-20 23:08:20,855 - DEBUG - Marking up chromosome 20
+2019-01-20 23:09:08,055 - DEBUG - Marking up chromosome 21
+2019-01-20 23:12:46,571 - DEBUG - Marking up chromosome 22
+2019-01-20 23:12:52,249 - DEBUG - Read first 50 million reads
+2019-01-20 23:13:32,182 - DEBUG - Marking up chromosome X
+2019-01-20 23:16:05,118 - DEBUG - Marking up chromosome MT
+2019-01-20 23:17:40,937 - DEBUG - End of file. Reset index: start scanning from initial position.
+2019-01-20 23:17:40,943 - DEBUG - 0 reads were skipped because no apropiate cell or umi barcode was found
+2019-01-20 23:17:40,950 - INFO - Now just waiting that the bam sorting process terminates
+2019-01-20 23:17:40,956 - INFO - bam file #0 has been sorted
+2019-01-20 23:17:40,977 - DEBUG - Start molecule counting!
+2019-01-20 23:17:47,393 - DEBUG - Features available for chromosomes : ['1-', '1+', '10-', '10+', '11-', '11+', '12-', '12+', '13-', '13+', '14-', '14+', '15-', '15+', '16-', '16+', '17-', '17+', '18-', '18+', '19-', '19+', '2-', '2+', '20-', '20+', '21-', '21+', '22-', '22+', '3-', '3+', '4-', '4+', '5-', '5+', '6-', '6+', '7-', '7+', '8-', '8+', '9-', '9+', 'MT-', 'MT+', 'X-', 'X+', 'Y-', 'Y+']
+2019-01-20 23:17:47,400 - DEBUG - Mask available for chromosomes : []
+2019-01-20 23:17:47,418 - DEBUG - Summarizing the results of intron validation.
+2019-01-20 23:17:48,290 - DEBUG - Validated 367494 introns (of which unique intervals 111948) out of 999033 total possible introns (considering each possible transcript models).
+2019-01-20 23:17:48,297 - DEBUG - Reading /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/cellsorted_K562_Rep2_withtags.bam
+2019-01-20 23:17:48,369 - DEBUG - Read first 0 million reads
+2019-01-20 23:25:56,166 - DEBUG - Read first 10 million reads
+2019-01-20 23:34:05,645 - DEBUG - Read first 20 million reads
+2019-01-20 23:38:02,976 - WARNING - Trashing read, too long span
+BILLIEHOLIDAY:7:114:276:1999/2/2	129	chr9	38552925	255	5S38M3006937N15M12S	*	0	0	ACTGTTATCGCCTTGGAGCCCCCACACAGGAGGTTACCATCCTCAGACCCCGGGTTCATGGACTCACCAA	BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBRQQQRSTTUZUYVXXTZ^^^^^[``aVaaa_	CB:Z:K562_Rep2	UB:Z:dummy_umi
+2019-01-20 23:42:16,276 - DEBUG - Read first 30 million reads
+2019-01-20 23:50:16,097 - DEBUG - Read first 40 million reads
+2019-01-20 23:58:25,257 - DEBUG - Read first 50 million reads
+2019-01-21 00:02:53,786 - DEBUG - Counting for batch 1, containing 1 cells and 55735062 reads
+2019-01-21 00:40:03,399 - DEBUG - 0 reads not considered because fully enclosed in repeat masked regions
+2019-01-21 00:52:56,692 - WARNING - The barcode selection mode is off, no cell events will be identified by <80 counts
+2019-01-21 00:52:56,703 - WARNING - 0 of the barcodes where without cell
+2019-01-21 00:53:18,386 - DEBUG - 0 reads were skipped because no apropiate cell or umi barcode was found
+2019-01-21 00:53:18,401 - DEBUG - Counting done!
+2019-01-21 00:53:18,429 - DEBUG - Example of barcode: K562_Rep2 and cell_id: K562_Rep2_withtags_LCBND:K562_Rep2
+2019-01-21 00:53:18,442 - DEBUG - Generating output file /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/velocyto/K562_Rep2_withtags_LCBND.loom
+2019-01-21 00:53:18,449 - DEBUG - Collecting row attributes
+2019-01-21 00:53:18,696 - DEBUG - Generating data table
+2019-01-21 00:53:18,706 - DEBUG - Writing loom file
+2019-01-21 00:53:20,281 - DEBUG - Terminated Succesfully!
+2019-01-21 10:03:00,974 - INFO - No SAMPLEID specified, the sample will be called K562_Rep2_withtags_OWVYP (last 5 digits are a random-id to avoid overwriting some other file by mistake)
+2019-01-21 10:03:00,975 - INFO - No OUTPUTFOLDER specified, find output files inside /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/velocyto
+2019-01-21 10:03:00,976 - DEBUG - Using logic: Default
+2019-01-21 10:03:00,977 - DEBUG - Cell barcodes will be determined while reading the .bam file
+2019-01-21 10:03:00,992 - DEBUG - Peeking into /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/K562_Rep2_withtags.bam
+2019-01-21 10:03:01,180 - WARNING - The file /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/cellsorted_K562_Rep2_withtags.bam already exists. The sorting step will be skipped and the existing file will be used.
+2019-01-21 10:03:01,180 - INFO - Load the annotation from /home/aramu/dat/ensembl/gtf/Homo_sapiens.GRCh37.87.withchr.gtf
+2019-01-21 10:03:11,607 - DEBUG - Parsing Chromosome 1 strand - [line 0]
+2019-01-21 10:03:12,843 - DEBUG - Done with 1- [line 115464]
+2019-01-21 10:03:12,844 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:12,865 - DEBUG - Seen 2651 genes until now
+2019-01-21 10:03:12,866 - DEBUG - Parsing Chromosome 1 strand + [line 115465]
+2019-01-21 10:03:14,035 - DEBUG - Done with 1+ [line 239634]
+2019-01-21 10:03:14,036 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:14,057 - DEBUG - Seen 5363 genes until now
+2019-01-21 10:03:14,059 - DEBUG - Parsing Chromosome 10 strand - [line 239635]
+2019-01-21 10:03:14,640 - DEBUG - Done with 10- [line 287385]
+2019-01-21 10:03:14,641 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:14,650 - DEBUG - Seen 6472 genes until now
+2019-01-21 10:03:14,651 - DEBUG - Parsing Chromosome 10 strand + [line 287386]
+2019-01-21 10:03:15,018 - DEBUG - Done with 10+ [line 332591]
+2019-01-21 10:03:15,019 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:15,027 - DEBUG - Seen 7623 genes until now
+2019-01-21 10:03:15,028 - DEBUG - Parsing Chromosome 11 strand - [line 332592]
+2019-01-21 10:03:15,859 - DEBUG - Done with 11- [line 410431]
+2019-01-21 10:03:15,860 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:15,875 - DEBUG - Seen 9228 genes until now
+2019-01-21 10:03:15,876 - DEBUG - Parsing Chromosome 11 strand + [line 410432]
+2019-01-21 10:03:16,531 - DEBUG - Done with 11+ [line 491967]
+2019-01-21 10:03:16,532 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:16,547 - DEBUG - Seen 10831 genes until now
+2019-01-21 10:03:16,548 - DEBUG - Parsing Chromosome 12 strand - [line 491968]
+2019-01-21 10:03:17,424 - DEBUG - Done with 12- [line 571262]
+2019-01-21 10:03:17,425 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:17,439 - DEBUG - Seen 12246 genes until now
+2019-01-21 10:03:17,440 - DEBUG - Parsing Chromosome 12 strand + [line 571263]
+2019-01-21 10:03:18,072 - DEBUG - Done with 12+ [line 650410]
+2019-01-21 10:03:18,073 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:18,086 - DEBUG - Seen 13649 genes until now
+2019-01-21 10:03:18,088 - DEBUG - Parsing Chromosome 13 strand - [line 650411]
+2019-01-21 10:03:18,241 - DEBUG - Done with 13- [line 669043]
+2019-01-21 10:03:18,242 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:18,246 - DEBUG - Seen 14280 genes until now
+2019-01-21 10:03:18,247 - DEBUG - Parsing Chromosome 13 strand + [line 669044]
+2019-01-21 10:03:18,404 - DEBUG - Done with 13+ [line 688041]
+2019-01-21 10:03:18,406 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:18,411 - DEBUG - Seen 14866 genes until now
+2019-01-21 10:03:18,412 - DEBUG - Parsing Chromosome 14 strand - [line 688042]
+2019-01-21 10:03:19,039 - DEBUG - Done with 14- [line 733053]
+2019-01-21 10:03:19,040 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:19,049 - DEBUG - Seen 15972 genes until now
+2019-01-21 10:03:19,050 - DEBUG - Parsing Chromosome 14 strand + [line 733054]
+2019-01-21 10:03:19,451 - DEBUG - Done with 14+ [line 783042]
+2019-01-21 10:03:19,452 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:19,462 - DEBUG - Seen 17110 genes until now
+2019-01-21 10:03:19,463 - DEBUG - Parsing Chromosome 15 strand - [line 783043]
+2019-01-21 10:03:19,881 - DEBUG - Done with 15- [line 832989]
+2019-01-21 10:03:19,881 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:19,890 - DEBUG - Seen 18134 genes until now
+2019-01-21 10:03:19,891 - DEBUG - Parsing Chromosome 15 strand + [line 832990]
+2019-01-21 10:03:20,278 - DEBUG - Done with 15+ [line 880053]
+2019-01-21 10:03:20,279 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:20,288 - DEBUG - Seen 19190 genes until now
+2019-01-21 10:03:20,290 - DEBUG - Parsing Chromosome 16 strand - [line 880054]
+2019-01-21 10:03:21,058 - DEBUG - Done with 16- [line 936613]
+2019-01-21 10:03:21,059 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:21,070 - DEBUG - Seen 20351 genes until now
+2019-01-21 10:03:21,071 - DEBUG - Parsing Chromosome 16 strand + [line 936614]
+2019-01-21 10:03:21,632 - DEBUG - Done with 16+ [line 1005725]
+2019-01-21 10:03:21,633 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:21,646 - DEBUG - Seen 21533 genes until now
+2019-01-21 10:03:21,647 - DEBUG - Parsing Chromosome 17 strand - [line 1005726]
+2019-01-21 10:03:22,358 - DEBUG - Done with 17- [line 1093709]
+2019-01-21 10:03:22,359 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:22,376 - DEBUG - Seen 23023 genes until now
+2019-01-21 10:03:22,377 - DEBUG - Parsing Chromosome 17 strand + [line 1093710]
+2019-01-21 10:03:23,027 - DEBUG - Done with 17+ [line 1174422]
+2019-01-21 10:03:23,028 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:23,042 - DEBUG - Seen 24436 genes until now
+2019-01-21 10:03:23,043 - DEBUG - Parsing Chromosome 18 strand - [line 1174423]
+2019-01-21 10:03:23,228 - DEBUG - Done with 18- [line 1197400]
+2019-01-21 10:03:23,229 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:23,234 - DEBUG - Seen 24996 genes until now
+2019-01-21 10:03:23,235 - DEBUG - Parsing Chromosome 18 strand + [line 1197401]
+2019-01-21 10:03:23,765 - DEBUG - Done with 18+ [line 1219513]
+2019-01-21 10:03:23,766 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:23,771 - DEBUG - Seen 25563 genes until now
+2019-01-21 10:03:23,772 - DEBUG - Parsing Chromosome 19 strand - [line 1219514]
+2019-01-21 10:03:24,410 - DEBUG - Done with 19- [line 1301072]
+2019-01-21 10:03:24,411 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:24,426 - DEBUG - Seen 26974 genes until now
+2019-01-21 10:03:24,427 - DEBUG - Parsing Chromosome 19 strand + [line 1301073]
+2019-01-21 10:03:25,090 - DEBUG - Done with 19+ [line 1385077]
+2019-01-21 10:03:25,091 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:25,106 - DEBUG - Seen 28473 genes until now
+2019-01-21 10:03:25,107 - DEBUG - Parsing Chromosome 2 strand - [line 1385078]
+2019-01-21 10:03:25,880 - DEBUG - Done with 2- [line 1480498]
+2019-01-21 10:03:25,881 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:25,898 - DEBUG - Seen 30510 genes until now
+2019-01-21 10:03:25,899 - DEBUG - Parsing Chromosome 2 strand + [line 1480499]
+2019-01-21 10:03:27,102 - DEBUG - Done with 2+ [line 1576779]
+2019-01-21 10:03:27,104 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:27,122 - DEBUG - Seen 32520 genes until now
+2019-01-21 10:03:27,123 - DEBUG - Parsing Chromosome 20 strand - [line 1576780]
+2019-01-21 10:03:27,335 - DEBUG - Done with 20- [line 1603219]
+2019-01-21 10:03:27,336 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:27,341 - DEBUG - Seen 33186 genes until now
+2019-01-21 10:03:27,342 - DEBUG - Parsing Chromosome 20 strand + [line 1603220]
+2019-01-21 10:03:27,578 - DEBUG - Done with 20+ [line 1632542]
+2019-01-21 10:03:27,579 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:27,585 - DEBUG - Seen 33837 genes until now
+2019-01-21 10:03:27,586 - DEBUG - Parsing Chromosome 21 strand - [line 1632543]
+2019-01-21 10:03:27,698 - DEBUG - Done with 21- [line 1646200]
+2019-01-21 10:03:27,699 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:27,702 - DEBUG - Seen 34228 genes until now
+2019-01-21 10:03:27,703 - DEBUG - Parsing Chromosome 21 strand + [line 1646201]
+2019-01-21 10:03:27,826 - DEBUG - Done with 21+ [line 1660577]
+2019-01-21 10:03:27,827 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:27,831 - DEBUG - Seen 34573 genes until now
+2019-01-21 10:03:27,831 - DEBUG - Parsing Chromosome 22 strand - [line 1660578]
+2019-01-21 10:03:28,065 - DEBUG - Done with 22- [line 1689197]
+2019-01-21 10:03:28,066 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:28,072 - DEBUG - Seen 35157 genes until now
+2019-01-21 10:03:28,073 - DEBUG - Parsing Chromosome 22 strand + [line 1689198]
+2019-01-21 10:03:28,316 - DEBUG - Done with 22+ [line 1719282]
+2019-01-21 10:03:28,317 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:28,323 - DEBUG - Seen 35836 genes until now
+2019-01-21 10:03:28,324 - DEBUG - Parsing Chromosome 3 strand - [line 1719283]
+2019-01-21 10:03:28,978 - DEBUG - Done with 3- [line 1800860]
+2019-01-21 10:03:28,979 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:28,993 - DEBUG - Seen 37394 genes until now
+2019-01-21 10:03:28,994 - DEBUG - Parsing Chromosome 3 strand + [line 1800861]
+2019-01-21 10:03:29,629 - DEBUG - Done with 3+ [line 1880397]
+2019-01-21 10:03:29,631 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:29,644 - DEBUG - Seen 38937 genes until now
+2019-01-21 10:03:29,645 - DEBUG - Parsing Chromosome 4 strand - [line 1880398]
+2019-01-21 10:03:30,049 - DEBUG - Done with 4- [line 1931029]
+2019-01-21 10:03:30,050 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:30,061 - DEBUG - Seen 40221 genes until now
+2019-01-21 10:03:30,067 - DEBUG - Parsing Chromosome 4 strand + [line 1931030]
+2019-01-21 10:03:30,956 - DEBUG - Done with 4+ [line 1981602]
+2019-01-21 10:03:30,957 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:30,968 - DEBUG - Seen 41500 genes until now
+2019-01-21 10:03:30,969 - DEBUG - Parsing Chromosome 5 strand - [line 1981603]
+2019-01-21 10:03:31,405 - DEBUG - Done with 5- [line 2035920]
+2019-01-21 10:03:31,406 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:31,417 - DEBUG - Seen 42923 genes until now
+2019-01-21 10:03:31,418 - DEBUG - Parsing Chromosome 5 strand + [line 2035921]
+2019-01-21 10:03:31,909 - DEBUG - Done with 5+ [line 2097063]
+2019-01-21 10:03:31,910 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:31,925 - DEBUG - Seen 44359 genes until now
+2019-01-21 10:03:31,926 - DEBUG - Parsing Chromosome 6 strand - [line 2097064]
+2019-01-21 10:03:32,421 - DEBUG - Done with 6- [line 2159597]
+2019-01-21 10:03:32,422 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:32,434 - DEBUG - Seen 45818 genes until now
+2019-01-21 10:03:32,435 - DEBUG - Parsing Chromosome 6 strand + [line 2159598]
+2019-01-21 10:03:32,867 - DEBUG - Done with 6+ [line 2215482]
+2019-01-21 10:03:32,868 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:32,880 - DEBUG - Seen 47264 genes until now
+2019-01-21 10:03:32,881 - DEBUG - Parsing Chromosome 7 strand - [line 2215483]
+2019-01-21 10:03:33,356 - DEBUG - Done with 7- [line 2273859]
+2019-01-21 10:03:33,357 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:33,369 - DEBUG - Seen 48659 genes until now
+2019-01-21 10:03:33,369 - DEBUG - Parsing Chromosome 7 strand + [line 2273860]
+2019-01-21 10:03:33,891 - DEBUG - Done with 7+ [line 2338808]
+2019-01-21 10:03:33,892 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:33,905 - DEBUG - Seen 50140 genes until now
+2019-01-21 10:03:33,905 - DEBUG - Parsing Chromosome 8 strand - [line 2338809]
+2019-01-21 10:03:34,298 - DEBUG - Done with 8- [line 2388274]
+2019-01-21 10:03:34,299 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:34,309 - DEBUG - Seen 51366 genes until now
+2019-01-21 10:03:34,310 - DEBUG - Parsing Chromosome 8 strand + [line 2388275]
+2019-01-21 10:03:34,676 - DEBUG - Done with 8+ [line 2434182]
+2019-01-21 10:03:34,677 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:34,686 - DEBUG - Seen 52526 genes until now
+2019-01-21 10:03:34,687 - DEBUG - Parsing Chromosome 9 strand - [line 2434183]
+2019-01-21 10:03:35,049 - DEBUG - Done with 9- [line 2479495]
+2019-01-21 10:03:35,050 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:35,059 - DEBUG - Seen 53688 genes until now
+2019-01-21 10:03:35,060 - DEBUG - Parsing Chromosome 9 strand + [line 2479496]
+2019-01-21 10:03:36,011 - DEBUG - Done with 9+ [line 2525514]
+2019-01-21 10:03:36,012 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:36,020 - DEBUG - Seen 54849 genes until now
+2019-01-21 10:03:36,021 - DEBUG - Parsing Chromosome MT strand - [line 2525515]
+2019-01-21 10:03:36,022 - DEBUG - Done with MT- [line 2525544]
+2019-01-21 10:03:36,023 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:36,024 - DEBUG - Seen 54858 genes until now
+2019-01-21 10:03:36,025 - DEBUG - Parsing Chromosome MT strand + [line 2525545]
+2019-01-21 10:03:36,026 - DEBUG - Done with MT+ [line 2525658]
+2019-01-21 10:03:36,027 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:36,028 - DEBUG - Seen 54886 genes until now
+2019-01-21 10:03:36,029 - DEBUG - Parsing Chromosome X strand - [line 2525659]
+2019-01-21 10:03:36,338 - DEBUG - Done with X- [line 2565621]
+2019-01-21 10:03:36,339 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:36,347 - DEBUG - Seen 56063 genes until now
+2019-01-21 10:03:36,348 - DEBUG - Parsing Chromosome X strand + [line 2565622]
+2019-01-21 10:03:36,657 - DEBUG - Done with X+ [line 2605592]
+2019-01-21 10:03:36,658 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:36,665 - DEBUG - Seen 57278 genes until now
+2019-01-21 10:03:36,666 - DEBUG - Parsing Chromosome Y strand - [line 2605593]
+2019-01-21 10:03:36,695 - DEBUG - Done with Y- [line 2608780]
+2019-01-21 10:03:36,696 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:36,697 - DEBUG - Seen 57520 genes until now
+2019-01-21 10:03:36,698 - DEBUG - Parsing Chromosome Y strand + [line 2608781]
+2019-01-21 10:03:36,734 - DEBUG - Assigning indexes to genes
+2019-01-21 10:03:36,736 - DEBUG - Done with Y+ [line 2612759]
+2019-01-21 10:03:36,737 - DEBUG - Fixing corner cases of transcript models containg intron longer than 1000Kbp
+2019-01-21 10:03:38,919 - DEBUG - Generated 2194420 features corresponding to 196354 transcript models from /home/aramu/dat/ensembl/gtf/Homo_sapiens.GRCh37.87.withchr.gtf
+2019-01-21 10:03:38,948 - INFO - Scan /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/K562_Rep2_withtags.bam to validate intron intervals
+2019-01-21 10:03:45,312 - DEBUG - Reading /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/K562_Rep2_withtags.bam
+2019-01-21 10:03:45,346 - DEBUG - Read first 0 million reads
+2019-01-21 10:03:45,347 - DEBUG - Marking up chromosome 1
+2019-01-21 10:12:44,879 - DEBUG - Marking up chromosome 2
+2019-01-21 10:13:06,240 - DEBUG - Read first 10 million reads
+2019-01-21 10:15:25,804 - DEBUG - Marking up chromosome 3
+2019-01-21 10:16:58,145 - DEBUG - Marking up chromosome 4
+2019-01-21 10:17:45,992 - DEBUG - Marking up chromosome 5
+2019-01-21 10:19:06,322 - DEBUG - Marking up chromosome 6
+2019-01-21 10:21:22,547 - DEBUG - Marking up chromosome 7
+2019-01-21 10:22:34,997 - DEBUG - Marking up chromosome 8
+2019-01-21 10:22:44,565 - DEBUG - Read first 20 million reads
+2019-01-21 10:26:52,602 - DEBUG - Marking up chromosome 9
+2019-01-21 10:27:11,820 - WARNING - Trashing read, too long span
+BILLIEHOLIDAY:7:114:276:1999/2/2	129	chr9	38552925	255	5S38M3006937N15M12S	*	0	0	ACTGTTATCGCCTTGGAGCCCCCACACAGGAGGTTACCATCCTCAGACCCCGGGTTCATGGACTCACCAA	BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBRQQQRSTTUZUYVXXTZ^^^^^[``aVaaa_	CB:Z:K562_Rep2	UB:Z:dummy_umi
+2019-01-21 10:28:34,363 - DEBUG - Marking up chromosome 10
+2019-01-21 10:29:10,858 - DEBUG - Marking up chromosome 11
+2019-01-21 10:31:46,823 - DEBUG - Read first 30 million reads
+2019-01-21 10:32:03,820 - DEBUG - Marking up chromosome 12
+2019-01-21 10:34:36,442 - DEBUG - Marking up chromosome 13
+2019-01-21 10:34:47,770 - DEBUG - Marking up chromosome 14
+2019-01-21 10:36:06,468 - DEBUG - Marking up chromosome 15
+2019-01-21 10:36:42,109 - DEBUG - Marking up chromosome 16
+2019-01-21 10:39:15,375 - DEBUG - Marking up chromosome 17
+2019-01-21 10:41:01,006 - DEBUG - Read first 40 million reads
+2019-01-21 10:42:01,818 - DEBUG - Marking up chromosome 18
+2019-01-21 10:42:13,904 - DEBUG - Marking up chromosome 19
+2019-01-21 10:45:18,722 - DEBUG - Marking up chromosome 20
+2019-01-21 10:46:05,892 - DEBUG - Marking up chromosome 21
+2019-01-21 10:49:44,886 - DEBUG - Marking up chromosome 22
+2019-01-21 10:49:50,594 - DEBUG - Read first 50 million reads
+2019-01-21 10:50:30,368 - DEBUG - Marking up chromosome X
+2019-01-21 10:53:02,699 - DEBUG - Marking up chromosome MT
+2019-01-21 10:54:38,648 - DEBUG - End of file. Reset index: start scanning from initial position.
+2019-01-21 10:54:38,649 - DEBUG - 0 reads were skipped because no apropiate cell or umi barcode was found
+2019-01-21 10:54:38,650 - DEBUG - Start molecule counting!
+2019-01-21 10:54:45,036 - DEBUG - Features available for chromosomes : ['1-', '1+', '10-', '10+', '11-', '11+', '12-', '12+', '13-', '13+', '14-', '14+', '15-', '15+', '16-', '16+', '17-', '17+', '18-', '18+', '19-', '19+', '2-', '2+', '20-', '20+', '21-', '21+', '22-', '22+', '3-', '3+', '4-', '4+', '5-', '5+', '6-', '6+', '7-', '7+', '8-', '8+', '9-', '9+', 'MT-', 'MT+', 'X-', 'X+', 'Y-', 'Y+']
+2019-01-21 10:54:45,037 - DEBUG - Mask available for chromosomes : []
+2019-01-21 10:54:45,038 - DEBUG - Summarizing the results of intron validation.
+2019-01-21 10:54:45,880 - DEBUG - Validated 367494 introns (of which unique intervals 111948) out of 999033 total possible introns (considering each possible transcript models).
+2019-01-21 10:54:45,881 - DEBUG - Reading /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/cellsorted_K562_Rep2_withtags.bam
+2019-01-21 10:54:45,901 - DEBUG - Read first 0 million reads
+2019-01-21 11:02:31,681 - DEBUG - Read first 10 million reads
+2019-01-21 11:10:19,060 - DEBUG - Read first 20 million reads
+2019-01-21 11:14:09,360 - WARNING - Trashing read, too long span
+BILLIEHOLIDAY:7:114:276:1999/2/2	129	chr9	38552925	255	5S38M3006937N15M12S	*	0	0	ACTGTTATCGCCTTGGAGCCCCCACACAGGAGGTTACCATCCTCAGACCCCGGGTTCATGGACTCACCAA	BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBRQQQRSTTUZUYVXXTZ^^^^^[``aVaaa_	CB:Z:K562_Rep2	UB:Z:dummy_umi
+2019-01-21 11:18:10,367 - DEBUG - Read first 30 million reads
+2019-01-21 11:25:57,297 - DEBUG - Read first 40 million reads
+2019-01-21 11:33:50,076 - DEBUG - Read first 50 million reads
+2019-01-21 11:38:07,091 - DEBUG - Counting for batch 1, containing 1 cells and 55735062 reads
+2019-01-21 12:15:24,771 - DEBUG - 0 reads not considered because fully enclosed in repeat masked regions
+2019-01-21 12:27:40,066 - WARNING - The barcode selection mode is off, no cell events will be identified by <80 counts
+2019-01-21 12:27:40,068 - WARNING - 0 of the barcodes where without cell
+2019-01-21 12:28:01,568 - DEBUG - 0 reads were skipped because no apropiate cell or umi barcode was found
+2019-01-21 12:28:01,569 - DEBUG - Counting done!
+2019-01-21 12:28:01,585 - DEBUG - Example of barcode: K562_Rep2 and cell_id: K562_Rep2_withtags_OWVYP:K562_Rep2
+2019-01-21 12:28:01,586 - DEBUG - Generating output file /scratch/bclab/aramu/analysis/velocity/2019-01-02-test-velocyto/velocyto/K562_Rep2_withtags_OWVYP.loom
+2019-01-21 12:28:01,587 - DEBUG - Collecting row attributes
+2019-01-21 12:28:01,834 - DEBUG - Generating data table
+2019-01-21 12:28:01,835 - DEBUG - Writing loom file
+2019-01-21 12:28:02,481 - DEBUG - Terminated Succesfully!

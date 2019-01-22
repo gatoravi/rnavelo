@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/opt/apps/velocyto/0.17.11/bin/velocyto", line 11, in <module>
+    load_entry_point('velocyto==0.17.11', 'console_scripts', 'velocyto')()
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/click/core.py", line 722, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/click/core.py", line 697, in main
+    rv = self.invoke(ctx)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/click/core.py", line 895, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/click/core.py", line 535, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/velocyto/commands/run.py", line 113, in run
+    samtools_memory=samtools_memory, dump=dump, verbose=verbose, additional_ca=additional_ca)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/velocyto/commands/_run.py", line 159, in _run
+    exincounter.peek(bamfile[0])
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/velocyto/counter.py", line 133, in peek
+    fin = pysam.AlignmentFile(bamfile)  # type: pysam.AlignmentFile
+  File "pysam/libcalignmentfile.pyx", line 734, in pysam.libcalignmentfile.AlignmentFile.__cinit__
+  File "pysam/libcalignmentfile.pyx", line 983, in pysam.libcalignmentfile.AlignmentFile._open
+ValueError: file has no sequences defined (mode='r') - is it SAM/BAM format? Consider opening with check_sq=False
+[bam_sort_core] merging from 8 files and 8 in-memory blocks...
+slurmstepd-n156: error: *** JOB 15224898 ON n156 CANCELLED AT 2019-01-08T17:31:59 ***
+slurmstepd-n205: error: *** JOB 15270666 ON n205 CANCELLED AT 2019-01-10T11:30:40 ***
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) python/3.6.5
+

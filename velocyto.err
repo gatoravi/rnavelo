@@ -1,0 +1,51 @@
+slurmstepd-n163: error: Job 15193818 exceeded memory limit (17151620 > 16384000), being killed
+slurmstepd-n163: error: Exceeded job memory limit
+slurmstepd-n163: error: *** JOB 15193818 ON n163 CANCELLED AT 2019-01-04T17:38:12 ***
+Traceback (most recent call last):
+  File "/opt/apps/velocyto/0.17.11/bin/velocyto", line 11, in <module>
+    load_entry_point('velocyto==0.17.11', 'console_scripts', 'velocyto')()
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/click/core.py", line 722, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/click/core.py", line 697, in main
+    rv = self.invoke(ctx)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/click/core.py", line 895, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/click/core.py", line 535, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/velocyto/commands/run.py", line 113, in run
+    samtools_memory=samtools_memory, dump=dump, verbose=verbose, additional_ca=additional_ca)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/velocyto/commands/_run.py", line 212, in _run
+    exincounter.mark_up_introns(bamfile=bamfile, multimap=multimap)
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/velocyto/counter.py", line 655, in mark_up_introns
+    for r in self.iter_alignments(bamfile, unique=not multimap):
+  File "/opt/apps/velocyto/0.17.11/lib/python3.6/site-packages/velocyto/counter.py", line 256, in iter_alignments
+    if unique and read.get_tag("NH") != 1:
+  File "pysam/libcalignedsegment.pyx", line 2392, in pysam.libcalignedsegment.AlignedSegment.get_tag
+  File "pysam/libcalignedsegment.pyx", line 2434, in pysam.libcalignedsegment.AlignedSegment.get_tag
+KeyError: "tag 'NH' not present"
+[bam_sort_core] merging from 8 files and 8 in-memory blocks...
+slurmstepd-n153: error: Job 15214913 exceeded memory limit (32815812 > 32768000), being killed
+slurmstepd-n153: error: Exceeded job memory limit
+slurmstepd-n153: error: *** JOB 15214913 ON n153 CANCELLED AT 2019-01-07T16:45:58 ***
+Usage: velocyto run [OPTIONS] BAMFILE... GTFFILE
+
+Error: Invalid value for "bamfile": Path "wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep1_withtags_sorted.bam" does not exist.
+slurmstepd-n150: error: Job 15224108 exceeded memory limit (32806868 > 32768000), being killed
+slurmstepd-n150: error: Exceeded job memory limit
+slurmstepd-n150: error: *** JOB 15224108 ON n150 CANCELLED AT 2019-01-08T17:06:20 ***
+[bam_sort_core] merging from 0 files and 16 in-memory blocks...
+slurmstepd-n199: error: Job 15232778 exceeded memory limit (65544668 > 65536000), being killed
+slurmstepd-n199: error: Exceeded job memory limit
+slurmstepd-n199: error: *** JOB 15232778 ON n199 CANCELLED AT 2019-01-08T19:56:21 ***
+[bam_sort_core] merging from 8 files and 8 in-memory blocks...
+slurmstepd-n149: error: *** JOB 15234166 ON n149 CANCELLED AT 2019-01-09T11:45:51 ***
+Usage: velocyto run [OPTIONS] BAMFILE... GTFFILE
+
+Error: Invalid value for "bamfile": Path "wgEncodeCshlLongRnaSeqGm12878CellTotalAlnRep1_withtags_sorted_sampled.bam" does not exist.
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) python/3.6.5
+
